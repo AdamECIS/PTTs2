@@ -1,5 +1,6 @@
 // PTTs2.cpp : Defines the entry point for the console application.
 // Jared Stemeye
+// Rachel Adams
 #include "stdafx.h"
 #include <iostream>
 #include <string>
