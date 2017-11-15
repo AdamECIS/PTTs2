@@ -29,7 +29,7 @@
 
 using namespace std;
 
-
+void intro();
 int main()
 {
 	int rows = 3;
@@ -58,8 +58,7 @@ int main()
 		// Bottom of Board
 	}
 	cout << border << endl;
-
-
+	
 
 	system("pause");
 	return 0;
@@ -75,7 +74,6 @@ void intro()
 	cout << "They're bombs." << endl;
 	cout << "Oops." << endl;
 	cout << (char)bomb << " " << (char)bomb << " " << (char)bomb << " " << (char)bomb << " " << (char)bomb << " " << (char)bomb << endl;
-	cout << endl;
 	cout << "The good news though, is that there are non-invisible coins to make your journey worthwhile." << endl;
 	cout << "For every coin you collect, 100 points are added to your score." << endl;
 	cout << (char)coin << " " << (char)coin << " " << (char)coin << " " << (char)coin << " " << (char)coin << " " << (char)coin << endl;
