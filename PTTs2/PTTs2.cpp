@@ -64,3 +64,22 @@ int main()
 	system("pause");
 	return 0;
 }
+
+void intro()
+{
+	cout << "Welcome to The Maze! The obvective is to get from the enterance to the exit alive. Sound simple, right?" << endl;
+	cout << "Maybe, maybe not." << endl;
+	cout << "You see, there will be obstacles in your way, ones that might be invisible. Well, yeah, they're invisible." << endl;
+	cout << "They're bombs." << endl;
+	cout << "Oops." << endl;
+	cout << endl;
+	cout << "The good news though, is that there are non-invisible coins to make your journey worthwhile." << endl;
+	cout << "For every coin you collect, 100 points are added to your score." << endl;
+	cout << "Speaking of scores, taking less steps can also help you out. Make a lot of unnessary moves and your score" << endl;
+	cout << "might not be as high as you'd like it. Be efficient and collect your coins and you might just find your name" << endl;
+	cout << "on our high score list.";
+	cout << endl;
+	cout << "Use WASD to move: W will take you up, S will take you down, A and D will take you left and right." << endl;
+	cout << "Watch out for those bombs, and Good Luck!" << endl;
+	cout << endl;
+}
