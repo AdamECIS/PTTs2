@@ -118,6 +118,9 @@ int main()
 	int turns;
 	int lives = 3;
 	int r = 0, c = 0;
+	int points = 0;
+	int moveCount;
+	int nextLevel = 1;
 
 	int inc = 0;
 	char input;
@@ -145,11 +148,13 @@ int main()
 
 	board[r][c] = (char)player;
 	board[2][2] = (char)coin;
-	displayBoard(rows, cols, board);
 
-	while (contP && lives > 0)
+	displayBoard(rows, cols, board);
+	moveCount = 15;
+
+	while (contP && lives > 0 && nextLevel == 1)
 	{
-		cout << "Enter a move: ";
+		cout << moveCount << " moves left. Enter a move: ";
 		cin >> input;
 		system("CLS");
 
@@ -159,12 +164,14 @@ int main()
 			r = downLeft(r);
 			board[r][c] = (char)player;
 			board[r - 1][c] = '  ';
+			moveCount--;
+			points += 10;
 			if (bombBoard[r][c] == ' x ')
 			{
 				lives--;
 				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
 			}
-
+			cout << "Total Points: " << points << endl;
 			displayBoard(rows, cols, board);
 		}
 		else if (input == 'w' || input == 'W')
@@ -173,12 +180,14 @@ int main()
 			r = upRight(r);
 			board[r][c] = (char)player;
 			board[r + 1][c] = '  ';
+			moveCount--;
+			points += 10;
 			if (bombBoard[r][c] == ' x ')
 			{
 				lives--;
 				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
 			}
-
+			cout << "Total Points: " << points << endl;
 			displayBoard(rows, cols, board);
 		}
 		else if (input == 'd' || input == 'D')
@@ -187,12 +196,14 @@ int main()
 			c = downLeft(c);
 			board[r][c] = (char)player;
 			board[r][c - 1] = '  ';
+			moveCount--;
+			points += 10;
 			if (bombBoard[r][c] == ' x ')
 			{
 				lives--;
 				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
 			}
-
+			cout << "Total Points: " << points << endl;
 			displayBoard(rows, cols, board);
 		}
 		else if (input == 'a' || input == 'A')
@@ -201,12 +212,14 @@ int main()
 			c = upRight(c);
 			board[r][c] = (char)player;
 			board[r][c + 1] = '  ';
+			moveCount--;
+			points += 10;
 			if (bombBoard[r][c] == ' x ')
 			{
 				lives--;
 				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
 			}
-
+			cout << "Total Points: " << points << endl;
 			displayBoard(rows, cols, board);
 		}
 		else if (input == 'p' || input == 'P')
@@ -223,7 +236,13 @@ int main()
 			lives--;
 			cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
 		}
-
+		if (moveCount <= 0)
+		{
+			cout << "You ran out and moves and lost a limb. " << endl;
+			lives--;
+			cout << lives << " limbs left. On to the next Level" << endl;
+			nextLevel++;
+		}
 
 
 	}
