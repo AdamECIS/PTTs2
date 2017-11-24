@@ -125,13 +125,14 @@ int main()
 	
 	intro();
 
+	//===================================== Level 1 ==========================================================================
 	moveCount = 15;
 	int r = 0, c = 0;
 	const int rows = 5;
 	const int cols = 5;
 	while (contP && lives > 0 && nextLevel == 1)
 	{
-		
+		cout << "LEVEL " << nextLevel << endl;
 		int arraySize = rows*cols;
 		char board[rows][cols] = {
 			{ '  ' , '  ' , '  ' , '  ', '  ' },
@@ -238,6 +239,7 @@ int main()
 			cout << "You ran out and moves and lost a limb. " << endl;
 			lives--;
 			cout << lives << " limbs left. On to the next Level" << endl;
+			cout << "Total Points: " << points << endl;
 			while (r > 0)
 			{
 				r--;
@@ -249,13 +251,36 @@ int main()
 			moveCount = 15;
 			nextLevel++;
 		}
+		for (int i = 0; i < arraySize; i++)
+		{
+			if (board[r][c] == board[rows - 1][cols - 1])
+			{
+				system("CLS");
+				cout << "You reached the Exit. On to the next Level. " << endl;
+				cout << "Total Points: " << points << endl;
+				while (r > 0)
+				{
+					r--;
+				}
+				while (c > 0)
+				{
+					c--;
+				}
+				moveCount = 15;
+				nextLevel++;
+			}
+			else
+			{
+
+			}
+		}
 	}
 		//=================================================== Level 2 ==========================================================
 	const int rows2 = 5;
 	const int cols2 = 5;
 	while (contP && lives > 0 && nextLevel == 2)
 	{
-
+		cout << "LEVEL " << nextLevel << endl;
 		int arraySize = rows2*cols2;
 		char board[rows2][cols2] = {
 			{ '  ' , '  ' , '  ' , '  ', '  ' },
@@ -372,6 +397,29 @@ int main()
 			}
 			moveCount = 15;
 			nextLevel++;
+		}
+		for (int i = 0; i < arraySize; i++)
+		{
+			if (board[r][c] == board[rows - 1][cols - 1])
+			{
+				system("CLS");
+				cout << "You reached the Exit. On to the next Level. " << endl;
+				cout << "Total Points: " << points << endl;
+				while (r > 0)
+				{
+					r--;
+				}
+				while (c > 0)
+				{
+					c--;
+				}
+				moveCount = 15;
+				nextLevel++;
+			}
+			else
+			{
+
+			}
 		}
 	}
 
