@@ -1,32 +1,33 @@
 ﻿  PTTs2.cpp
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(123): warning C4309: 'initializing': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(143): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(143): warning C4305: 'initializing': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(143): warning C4309: 'initializing': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(151): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(151): warning C4305: 'initializing': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(151): warning C4309: 'initializing': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(168): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(168): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(183): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(183): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(198): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(198): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(213): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(213): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(291): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(291): warning C4305: 'initializing': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(291): warning C4309: 'initializing': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(299): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(299): warning C4305: 'initializing': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(299): warning C4309: 'initializing': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(316): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(316): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(331): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(331): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(346): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(346): warning C4309: '=': truncation of constant value
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(361): warning C4305: '=': truncation from 'int' to 'char'
-c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(361): warning C4309: '=': truncation of constant value
-  PTTs2.vcxproj -> C:\Users\Adam\Documents\GitHub\PTTs2\Debug\PTTs2.exe
-  PTTs2.vcxproj -> C:\Users\Adam\Documents\GitHub\PTTs2\Debug\PTTs2.pdb (Partial PDB)
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(125): warning C4309: 'initializing': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(145): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(145): warning C4305: 'initializing': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(145): warning C4309: 'initializing': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(153): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(153): warning C4305: 'initializing': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(153): warning C4309: 'initializing': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(170): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(170): warning C4309: '=': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(185): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(185): warning C4309: '=': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(200): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(200): warning C4309: '=': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(215): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(215): warning C4309: '=': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(294): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(294): warning C4305: 'initializing': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(294): warning C4309: 'initializing': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(303): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(303): warning C4305: 'initializing': truncation from 'int' to 'char'
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(303): warning C4309: 'initializing': truncation of constant value
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(309): error C2664: 'void displayBoard(int,int,char [][5])': cannot convert argument 3 from 'char [6][6]' to 'char [][5]'
+  c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(309): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(319): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(320): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(334): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(335): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(349): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(350): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(364): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(365): error C2065: 'board': undeclared identifier
+c:\users\adam\documents\github\ptts2\ptts2\ptts2.cpp(407): error C2065: 'board': undeclared identifier
