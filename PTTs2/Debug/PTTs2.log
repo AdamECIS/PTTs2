@@ -1,3 +1,20 @@
-﻿  PTTs2.cpp
-  PTTs2.vcxproj -> C:\Users\radams26938\Documents\GitHub\PTTs2\Debug\PTTs2.exe
-  PTTs2.vcxproj -> C:\Users\radams26938\Documents\GitHub\PTTs2\Debug\PTTs2.pdb (Full PDB)
+﻿  stdafx.cpp
+  PTTs2.cpp
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(124): warning C4309: 'initializing': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(136): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(136): warning C4305: 'initializing': truncation from 'int' to 'char'
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(136): warning C4309: 'initializing': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(144): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(144): warning C4305: 'initializing': truncation from 'int' to 'char'
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(144): warning C4309: 'initializing': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(161): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(161): warning C4309: '=': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(175): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(175): warning C4309: '=': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(189): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(189): warning C4309: '=': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(203): warning C4305: '=': truncation from 'int' to 'char'
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(203): warning C4309: '=': truncation of constant value
+c:\users\jared\documents\github\ptts2\ptts2\ptts2.cpp(118): warning C4101: 'turns': unreferenced local variable
+  PTTs2.vcxproj -> C:\Users\Jared\Documents\GitHub\PTTs2\Debug\PTTs2.exe
+  PTTs2.vcxproj -> C:\Users\Jared\Documents\GitHub\PTTs2\Debug\PTTs2.pdb (Full PDB)

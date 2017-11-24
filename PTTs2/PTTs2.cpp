@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 // PTTs2.cpp : Defines the entry point for the console application.
 // Jared Stemeye
 // Rachel Adams
 // Adam Everett
-=======
+//=======
 //CIS150-01 - Team Purple Turtle Turtles
 //Start date: 11/12/2017
 //Description: This game is designed to create a maze for the user to run through. The maze walls will be invisibile, and the
@@ -20,49 +20,16 @@
 //potentially bombs moving with every user move
 //text file: saving player names and scores in a text file, old school arcade style high score list
 
-
->>>>>>> 32827cde7b4869d6ef7e63a1117233ce607e5383
+//>>>>>>> 32827cde7b4869d6ef7e63a1117233ce607e5383
 #include "stdafx.h"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <iomanip>
+#include <fstream>
+#include <ctime>
 
 using namespace std;
-
-void intro();
-int main()
-{
-	int rows = 3;
-	int cols = 3;
-	string level1[3][3];
-	string border = "=====";
-	string horGrid = "-----";
-	string vertGrid = "|";
-	// Top of Board
-	cout << border << endl;
-	for (int i = 0; i < rows; i++)
-	{
-		cout << vertGrid;
-		for (int j = 0; j < cols; j++)
-		{
-			cout << level1[i][j] << vertGrid;
-		}
-		if (i != rows - 1)
-		{
-			cout << endl << horGrid << endl;
-		}
-		else
-		{
-			cout << endl;
-		}
-		// Bottom of Board
-	}
-	cout << border << endl;
-	
-
-	system("pause");
-	return 0;
-}
 
 void intro()
 {
@@ -85,3 +52,186 @@ void intro()
 	cout << "Watch out for those bombs, and Good Luck!" << endl;
 	cout << endl;
 }
+
+// displayBoard (Jared and Adam)
+void displayBoard(int rows, int cols, char board[5][5])
+{
+	const int wall = 178;
+	for (int i = 0; i < (rows + 26); i++)
+	{
+		cout << (char)wall;
+	}
+	for (int i = 0; i < rows; i++)
+	{
+		// cell divider
+		cout << endl << (char)wall;
+		for (int j = 0; j < cols; j++)
+		{
+			cout << " _" << board[i][j] << "_ ";
+			if (j < (cols - 1))
+			{
+				cout << "|";
+			}
+		}
+		if (i != rows - 1)
+		{
+			cout << (char)wall;
+		}
+		else
+		{
+			//cout << " _ ";
+		}
+	}
+	cout << endl;
+	for (int i = 0; i < (rows + 26); i++)
+	{
+		cout << (char)wall;
+	}
+	cout << endl;
+}
+
+// Move Functions (Adam and Jared)
+
+int downLeft(int move)
+{
+	move = move + 1;
+	return move;
+
+}
+
+int upRight(int move)
+{
+	move = move - 1;
+	return move;
+}
+
+int main()
+{
+	const int rows = 5;
+	const int cols = 5;
+	const int wall = 178;
+	const int vertGrid = 179;
+	const int horGrid = 196;
+	const int player = 206;
+	const int exit = 175;
+	const int coin = 233;
+	int turns;
+	int lives = 3;
+	int r = 0, c = 0;
+
+	int inc = 0;
+	char input;
+	char mine = 255;
+	bool contP = true;
+	int arraySize = rows*cols;
+
+	intro();
+
+	char board[rows][cols] = {
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ '  ' , '  ' , '  ' , '  ', (char)exit }
+	};
+
+	char bombBoard[rows][cols] = {
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ '  ' , '  ' , '  ' , '  ', ' x ' },
+		{ '  ' , '  ' , '  ' , '  ', '  ' },
+		{ ' x ' , '  ' , '  ' , '  ', (char)exit }
+	};
+
+	board[r][c] = (char)player;
+	board[2][2] = (char)coin;
+	displayBoard(rows, cols, board);
+
+	while (contP && lives > 0)
+	{
+		cout << "Enter a move: ";
+		cin >> input;
+		system("CLS");
+
+		if (input == 's' || input == 'S')
+		{
+			downLeft(r);
+			r = downLeft(r);
+			board[r][c] = (char)player;
+			board[r - 1][c] = '  ';
+			if (bombBoard[r][c] == ' x ')
+			{
+				lives--;
+				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
+			}
+
+			displayBoard(rows, cols, board);
+		}
+		else if (input == 'w' || input == 'W')
+		{
+			upRight(r);
+			r = upRight(r);
+			board[r][c] = (char)player;
+			board[r + 1][c] = '  ';
+			if (bombBoard[r][c] == ' x ')
+			{
+				lives--;
+				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
+			}
+
+			displayBoard(rows, cols, board);
+		}
+		else if (input == 'd' || input == 'D')
+		{
+			downLeft(c);
+			c = downLeft(c);
+			board[r][c] = (char)player;
+			board[r][c - 1] = '  ';
+			if (bombBoard[r][c] == ' x ')
+			{
+				lives--;
+				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
+			}
+
+			displayBoard(rows, cols, board);
+		}
+		else if (input == 'a' || input == 'A')
+		{
+			upRight(c);
+			c = upRight(c);
+			board[r][c] = (char)player;
+			board[r][c + 1] = '  ';
+			if (bombBoard[r][c] == ' x ')
+			{
+				lives--;
+				cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
+			}
+
+			displayBoard(rows, cols, board);
+		}
+		else if (input == 'p' || input == 'P')
+		{
+			contP = false;
+		}
+		else
+		{
+			displayBoard(rows, cols, board);
+			cout << "Invalid input. ";
+		}
+		if (bombBoard[r][c] == ' x ')
+		{
+			lives--;
+			cout << "You hit a mine! Limb lost! " << endl << lives << " left! " << endl;
+		}
+
+
+
+	}
+
+	cout << endl << "You're done Buddy! " << endl;
+	
+
+	system("pause");
+	return 0;
+}
+
